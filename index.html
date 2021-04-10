@@ -7,11 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 <h2>Home work by Aleksey</h2>
-
+<div>
+    <button onclick="viewStatistic()">Statistic</button>
+</div>
+<div>
+    <input id="search" type="text">
+    <button onclick="search()">Search</button>
+</div>
 <table id="table">
 </table>
 <hr>
@@ -23,16 +30,33 @@
     <button id="cancel" onclick="cancel()">Cancel</button>
 </div>
 <div id="addDiv">
-    <label for="inputId">
-        <input id="inputId" type="number" min="0" placeholder="Введите номер">
+    <label for="id">
+        <input id="id" type="number" min="1">
     </label>
-    <label for="addInputString">
-        <input id="addInputString" type="text" min="0" placeholder="Введите номер">
+    <label for="addBrand">
+        <input id="addBrand" type="text" placeholder="Enter the car brand">
+    </label>
+    <label for="addModel">
+        <input id="addModel" type="text" placeholder="Enter the model">
+    </label>
+    <label for="addAge">
+        <input id="addAge" type="text" placeholder="Enter the car age">
+    </label>
+    <label for="addVolume">
+        <input id="addVolume" type="text" placeholder="Enter the engine volume">
+    </label>
+    <label for="addConsumption">
+        <input id="addConsumption" type="text" placeholder="Enter the consumption">
+    </label>
+    <label for="addMileage">
+        <input id="addMileage" type="text" placeholder="Enter the mileage">
     </label>
 </div>
+<div id="searchList"></div>
 <button id="getDataById" onclick="getDataNameById()">Get data by id</button>
 <button id="submitButton" onclick="submit()">Submit</button>
 <p id="message"></p>
+<p id="statistic"></p>
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,35 +1,22 @@
 html, body {
     height: 100%;
 }
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 input {
-   margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
-#table td{
-    padding: 5px 10px;
-}
-table td{
+#table td {
     padding: 5px 10px;
 }
 
-/*#removeInput {*/
-/*    visibility: hidden;*/
-/*}*/
-/*#submitButton {*/
-/*    visibility: hidden;*/
-/*}*/
-/*#cancel {*/
-/*    visibility: hidden;*/
-/*}*/
-/*#addDiv {*/
-/*    visibility: hidden;*/
-/*}*/
-/*#editId {*/
-/*    visibility: hidden;*/
-/*}*/
+table td {
+    padding: 5px 10px;
+}
